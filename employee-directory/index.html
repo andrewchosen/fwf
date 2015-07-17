@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Employee Directory App</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/dataService.js"></script>
+</head>
+<body ng-app="EmployeeDirectory" ng-controller="EDController">
+	<header>
+		<h1>Employee Directory</h1>
+	</header>
+	<section id="form">
+		<form>
+			<h2>Add Employee</h2>
+			<label>Employee Name: <input type="text" name="name" ng-model="newEmployee.name"></label>
+			<label>Street Address: <input type="text" name="street" ng-model="newEmployee.street"></label>
+			<label>City: <input type="text" name="city" ng-model="newEmployee.city"></label>
+			<label>State: <input type="text" name="state" ng-model="newEmployee.state"></label>
+			<label>Zip Code: <input type="text" name="zip" ng-model="newEmployee.zip"></label>
+			<button ng-click="addNewEmployee()">Add Employee</button>
+		</form>
+	</section>
+	<section id="entries">
+		<article ng-repeat="employee in employees track by $index">
+			<h2>{{employee.name}}</h2>
+			<p>{{employee.street}}</p>
+			<p>{{employee.city}}</p>
+			<p>{{employee.state}}</p>
+			<p>{{employee.zip}}</p>
+			<button ng-click="removeEmployee($index)">&times;</button>
+		</article>
+
+	</section>
+
+</body>
+</html>
