@@ -30,7 +30,7 @@ angular.module("CrudApp", ["ngRoute"])
 	.controller("View3Controller", function($scope,$routeParams){
 		$scope.test = "Hello World 3";
 
-		$scope.otherTest = "$routeParams.paramTest";
+		$scope.otherTest = $routeParams.paramTest;
 	})
 
 	.controller("MainController", function($scope){
