@@ -9,7 +9,12 @@ angular.module("CrudApp", ["ngRoute"])
 		}).when("/view2",{
 			templateUrl : "view2.html",
 			controller : "View2Controller"
-		}).otherwise({
+		}).when("/view3/:paramTest",{
+			templateUrl : "view3.html",
+			controller : "View3Controller"
+		})
+
+		.otherwise({
 			redirectTo : "/view1"
 		});
 	})
@@ -20,6 +25,12 @@ angular.module("CrudApp", ["ngRoute"])
 
 	.controller("View2Controller", function($scope){
 		$scope.test = "Hello World 2";
+	})
+
+	.controller("View3Controller", function($scope,$routeParams){
+		$scope.test = "Hello World 3";
+
+		$scope.otherTest = "$routeParams.paramTest";
 	})
 
 	.controller("MainController", function($scope){
