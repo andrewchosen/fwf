@@ -8,7 +8,7 @@
 </section>
 <section id="testimonials">
 	<article ng-repeat="testimonial in testimonials track by $index">
-		<h2>{{testimonial.name}}</h2>
+		<h3>{{testimonial.name}}</h3>
 		<p>{{testimonial.quote}}</p>
 		<button ng-click="removeTestimonial($index)">&times;</button>
 	</article>
