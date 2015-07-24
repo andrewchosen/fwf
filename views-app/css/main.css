@@ -87,13 +87,13 @@ input, textarea {
 		display: inline-block;
 	}
 
-	section#news label {
+	section.form label {
 		width: calc(100% / 3 - 10px);
 		margin-left: 15px;
 		float: left;
 	}
 
-	section#projects label {
+	section.form label {
 		width: calc(100% / 2 - 15px);
 		margin-left: 15px;
 		float: left;
