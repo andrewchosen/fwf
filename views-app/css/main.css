@@ -120,7 +120,6 @@ article button {
 
 article button:hover {
 	background: #cc0000;
-	border-radius: 50%;
 	color: #fff;
 }
 
