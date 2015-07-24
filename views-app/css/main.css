@@ -99,7 +99,7 @@ input, textarea {
 		float: left;
 	}
 
-	label:first-of-type, label.textbox {
+	section.form label:first-of-type, section.form label.textbox {
 		margin-left: 0;
 	}
 
