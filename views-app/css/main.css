@@ -78,7 +78,12 @@ label {
 	padding: 15px 0;
 }
 
-input, textarea {
+input {
 	display: inline-block;
 	margin-left: 7.5px;
+}
+
+textarea {
+	display: block;
+	margin-top: 7.5px;
 }
