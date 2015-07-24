@@ -16,3 +16,16 @@ header, section {
 	max-width: 1024px;
 	margin: auto;
 }
+
+nav {
+	text-align: center;
+}
+
+nav ul li {
+	display: inline-block;
+	color: #C13B00;
+}
+
+nav ul li:hover {
+	color: #FF6600;
+}
