@@ -24,11 +24,11 @@ angular.module("MyPortfolio", ["ngRoute"])
 		$scope.newPost = {};
 
 		$scope.addNewPost = function(){
-			if($scope.newPost.name != undefined){
+			if($scope.newPost.title != undefined){
 				DataService.savePost($scope.newPost.title,$scope.newPost.author,$scope.newPost.date,$scope.newPost.content);
 				$scope.newPost = {};
 			}else{
-				alert("Please fill out an post name.");
+				alert("Please fill out a post name.");
 			}
 		};
 
