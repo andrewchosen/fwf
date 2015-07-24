@@ -1,4 +1,4 @@
-angular.module("EmployeeDirectory").service("DataService", function(){
+angular.module("MyPortfolio").service("DataService", function(){
 	var employeeArray = [];
 	this.getEmployees = function(){
 		var employeeArray = JSON.parse(localStorage.getItem("employeesLS")) || [];

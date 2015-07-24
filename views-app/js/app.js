@@ -1,6 +1,6 @@
 // Created by Andrew Lancaster on 7/16/2015
 
-angular.module("CrudApp", ["ngRoute"])
+angular.module("MyPortfolio", ["ngRoute"])
 
 	.config(function($routeProvider){
 		$routeProvider.when("/news",{
