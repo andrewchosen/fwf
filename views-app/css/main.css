@@ -78,6 +78,7 @@ input, textarea {
 	display: block;
 	margin-top: 7.5px;
 	width: 100%;
+	padding: 15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -86,8 +87,13 @@ input, textarea {
 	}
 
 	label {
-		width: calc(100% / 3);
+		width: calc(100% / 3 - 15px);
+		margin-left: 15px;
 		float: left;
+	}
+
+	label:first-of-type {
+		margin-left: 0;
 	}
 
 	label.textbox {
