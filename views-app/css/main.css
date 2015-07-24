@@ -63,11 +63,13 @@ section#news, section#projects, section#testimonials {
 
 article {
 	margin-top: 30px;
-	padding-bottom: 30px;
-	border-bottom: 1px solid #424E4F;
+	padding-top: 30px;
+	border-top: 1px solid #424E4F;
 }
 
 article:first-of-type {
 	margin-top: 0;
+	border: 0;
+	padding-top: 0;
 }
 
