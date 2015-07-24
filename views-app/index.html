@@ -11,8 +11,17 @@
 	<script src="js/dataService.js"></script>
 </head>
 <body ng-app="MyPortfolio" ng-controller="MainController">
+<header>
+	<h1>{{ test }}</h1>
+	<nav>
+		<ul>
+			<li><a href="#/news">Latest News</a></li>
+			<li><a href="#/projects">Recent Project</a></li>
+			<li><a href="#/testimonials/great">Testimonials</a></li>
+		</ul>
+	</nav>
+</header>
 
-<h1>{{ test }}</h1>
 <section ng-view></section>
 
 </body>
