@@ -65,13 +65,14 @@ angular.module("MyPortfolio", ["ngRoute"])
 		}
 	})
 
+	// Testimonials Controller
 	.controller("TestimonialsController", function($scope,$routeParams,DataService){
 		$scope.testimonials = DataService.getTestimonials();
 		$scope.newTestimonial = {};
 
 		$scope.addNewTestimonial = function(){
 			if($scope.newTestimonial.name != undefined){
-				DataService.saveTestimonial($scope.newTestimonial.name,$scope.newTestimonial.testimonial);
+				DataService.saveTestimonial($scope.newTestimonial.name,$scope.newTestimonial.quote);
 				$scope.newTestimonial = {};
 			}else{
 				alert("Please fill out a testimonial name.");

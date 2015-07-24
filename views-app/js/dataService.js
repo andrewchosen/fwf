@@ -59,8 +59,8 @@ angular.module("MyPortfolio").service("DataService", function(){
 		return testimonialsArray;
 	}
 	// Save News Testimonial
-	this.saveTestimonial = function(pName, pTestimonial){
-		var savedTestimonials = {name: pName, testimonial: pTestimonial};
+	this.saveTestimonial = function(pName, pQuote){
+		var savedTestimonials = {name: pName, quote: pQuote};
 		testimonialsArray.push(savedTestimonials);
 		localStorage.setItem("testimonialsLS", JSON.stringify(testimonialsArray));
 	}

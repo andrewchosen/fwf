@@ -2,14 +2,14 @@
 	<h2>Add an {{ clientDescription }} Client </h2>
 	<form>
 		<label>Client Name: <input type="text" name="name" ng-model="newTestimonial.name"></label>
-		<label>Testimonial: <textarea type="text" name="testimonial" ng-model="newTestimonial.testimonial"></textarea></label>
+		<label>Testimonial: <textarea type="text" name="quote" ng-model="newTestimonial.quote"></textarea></label>
 		<button ng-click="addNewTestimonial()">Add</button>
 	</form>
 </section>
 <section id="entries">
 	<article ng-repeat="testimonial in testimonials track by $index">
 		<h2>{{testimonial.name}}</h2>
-		<p>{{testimonial.testimonial}}</p>
+		<p>{{testimonial.quote}}</p>
 		<button ng-click="removeTestimonial($index)">&times;</button>
 	</article>
 </section>
