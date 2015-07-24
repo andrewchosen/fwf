@@ -87,12 +87,12 @@ input, textarea {
 	}
 
 	label {
-		width: calc(100% / 3 - 15px);
+		width: calc(100% / 3 - 10px);
 		margin-left: 15px;
 		float: left;
 	}
 
-	label:first-of-type {
+	label:first-of-type, label.textbox {
 		margin-left: 0;
 	}
 
