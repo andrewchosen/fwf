@@ -6,13 +6,10 @@
 		<button ng-click="addNewTestimonial()">Add</button>
 	</form>
 </section>
-<section id="entries">
+<section id="testimonials">
 	<article ng-repeat="testimonial in testimonials track by $index">
 		<h2>{{testimonial.name}}</h2>
 		<p>{{testimonial.quote}}</p>
 		<button ng-click="removeTestimonial($index)">&times;</button>
 	</article>
 </section>
-
-
-<p>Here is something dynamic:<br />{{ clientDescription }}</p>

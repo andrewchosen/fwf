@@ -7,7 +7,7 @@
 		<button ng-click="addNewProject()">Add</button>
 	</form>
 </section>
-<section id="entries">
+<section id="projects">
 	<article ng-repeat="project in projects track by $index">
 		<h2>{{project.name}}</h2>
 		<p>{{project.date | date : "MM/dd/yyyy"}}</p>
