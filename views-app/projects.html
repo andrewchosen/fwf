@@ -11,7 +11,7 @@
 	<article ng-repeat="project in projects track by $index">
 		<h2>{{project.name}}</h2>
 		<p>{{project.date}}</p>
-		<p>{{project.content}}</p>
+		<p>{{project.description}}</p>
 		<button ng-click="removeProject($index)">&times;</button>
 	</article>
 </section>
