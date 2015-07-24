@@ -19,6 +19,7 @@ angular.module("MyPortfolio", ["ngRoute"])
 		});
 	})
 
+	// News Controller
 	.controller("NewsController", function($scope,DataService){
 		$scope.posts = DataService.getPosts();
 		$scope.newPost = {};
@@ -41,8 +42,28 @@ angular.module("MyPortfolio", ["ngRoute"])
 		}
 	})
 
+	// Projects Controller
 	.controller("ProjectsController", function($scope){
-		$scope.test = "Hello World 2";
+		$scope.projects = DataService.getProjects();
+		$scope.newProject = {};
+
+		$scope.addNewProject = function(){
+			if($scope.newProject.title != undefined){
+				DataService.saveProject($scope.newProject.title,$scope.newProject.author,$scope.newProject.date,$scope.newProject.content);
+				$scope.newProject = {};
+			}else{
+				alert("Please fill out a project name.");
+			}
+		};
+
+		$scope.removeProject = function(i){
+			DataService.removeProject(i);
+		};
+
+		$scope.clear = function(){
+			DataService.deleteLocalStorage();
+		}
+	})
 	})
 
 	.controller("TestimonialsController", function($scope,$routeParams){

@@ -1,1 +1,19 @@
-<p>{{test}}</p>
+<section id="form">
+	<h2>Create Project</h2>
+	<form>
+		<label>Project Title: <input type="text" name="title" ng-model="newProject.title"></label>
+		<label>Author: <input type="text" name="author" ng-model="newProject.author"></label>
+		<label>Publish Date: <input type="text" name="date" ng-model="newProject.date"></label>
+		<label>Content: <textarea type="text" name="content" ng-model="newProject.content"></textarea></label>
+		<button ng-click="addNewProject()">Publish</button>
+	</form>
+</section>
+<section id="entries">
+	<article ng-repeat="project in projects track by $index">
+		<h2>{{project.title}}</h2>
+		<p>{{project.author}}</p>
+		<p>{{project.date}}</p>
+		<p>{{project.content}}</p>
+		<button ng-click="removeProject($index)">&times;</button>
+	</article>
+</section>
