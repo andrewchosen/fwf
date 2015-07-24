@@ -73,3 +73,12 @@ article:first-of-type {
 	padding-top: 0;
 }
 
+label {
+	display: block;
+	padding: 15px 0;
+}
+
+input, textarea {
+	display: inline-block;
+	margin-left: 7.5px;
+}
