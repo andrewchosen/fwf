@@ -7,7 +7,7 @@ angular.module("MyPortfolio").service("DataService", function(){
 		return postsArray;
 	}
 	// Save News Post
-	this.savePost = function(pName,pStreet,pCity,pState,pZip){
+	this.savePost = function(pTitle,pAuthor,pDate,pContent){
 		var savedPosts = {name: pName, street: pStreet, city: pCity, state: pState, zip: pZip};
 		postsArray.push(savedPosts);
 		localStorage.setItem("postsLS", JSON.stringify(postsArray));
