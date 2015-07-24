@@ -87,19 +87,19 @@ input, textarea {
 		display: inline-block;
 	}
 
-	section.form label {
+	section#news label {
 		width: calc(100% / 3 - 10px);
 		margin-left: 15px;
 		float: left;
 	}
 
-	section.form label {
+	section#projects label {
 		width: calc(100% / 2 - 15px);
 		margin-left: 15px;
 		float: left;
 	}
 
-	section.form label:first-of-type, section.form label.textbox {
+	section form label:first-of-type, section form label.textbox {
 		margin-left: 0;
 	}
 
