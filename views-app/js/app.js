@@ -3,31 +3,31 @@
 angular.module("CrudApp", ["ngRoute"])
 
 	.config(function($routeProvider){
-		$routeProvider.when("/view1",{
-			templateUrl : "view1.html",
-			controller : "View1Controller"
-		}).when("/view2",{
-			templateUrl : "view2.html",
-			controller : "View2Controller"
-		}).when("/view3/:paramTest",{
-			templateUrl : "view3.html",
-			controller : "View3Controller"
+		$routeProvider.when("/news",{
+			templateUrl : "news.html",
+			controller : "NewsController"
+		}).when("/projects",{
+			templateUrl : "projects.html",
+			controller : "ProjectsController"
+		}).when("/testimonials/:paramTest",{
+			templateUrl : "testimonials.html",
+			controller : "TestimonialsController"
 		})
 
 		.otherwise({
-			redirectTo : "/view1"
+			redirectTo : "/news"
 		});
 	})
 
-	.controller("View1Controller", function($scope){
+	.controller("NewsController", function($scope){
 		$scope.test = "Hello World 1";
 	})
 
-	.controller("View2Controller", function($scope){
+	.controller("ProjectsController", function($scope){
 		$scope.test = "Hello World 2";
 	})
 
-	.controller("View3Controller", function($scope,$routeParams){
+	.controller("TestimonialsController", function($scope,$routeParams){
 		$scope.test = "Hello World 3";
 
 		$scope.otherTest = $routeParams.paramTest;
