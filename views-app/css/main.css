@@ -103,7 +103,7 @@ input, textarea {
 		margin-left: 0;
 	}
 
-	label.textbox {
+	section.form label.textbox {
 		width: 100%;
 	}
 }
