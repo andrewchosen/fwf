@@ -84,7 +84,7 @@ input, textarea {
 }
 
 section form button {
-	display: inline-block;
+	display: block;
 	padding: 15px 30px;
 	border: 3px solid #C13B00;
 	color: #C13B00;
@@ -124,5 +124,9 @@ section form button:hover {
 
 	section.form label.textbox {
 		width: 100% !important;
+	}
+
+	section form button {
+		display: inline-block;
 	}
 }
