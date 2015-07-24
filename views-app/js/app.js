@@ -90,3 +90,7 @@ angular.module("MyPortfolio", ["ngRoute"])
 		// Route Param
 		$scope.clientDescription = $routeParams.paramTest;
 	})
+
+	.controller("MainController", function($scope){
+		$scope.title = "Andrew's Portfolio";
+	})
