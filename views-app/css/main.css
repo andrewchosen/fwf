@@ -45,6 +45,13 @@ nav ul li a:hover {
 
 section {
 	padding: 30px;
+	overflow: auto;
+}
+
+section button::before {
+	content: "";
+	display: table-cell;
+	clear: both;
 }
 
 section#form {
