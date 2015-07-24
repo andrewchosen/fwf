@@ -93,7 +93,7 @@ button {
 	text-transform: uppercase;
 }
 
-button:hover {
+section form button:hover {
 	background: #C13B00;
 	color: #1B1D1E;
 }
