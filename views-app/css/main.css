@@ -88,19 +88,19 @@ input, textarea {
 	padding: 15px;
 }
 
-label.textbox::after {
-	content: "";
-	display: table-cell;
-	clear: both;
-}
-
 @media screen and (min-width: 768px) {
 	nav ul li {
 		display: inline-block;
 	}
 
-	label {
+	section#news label {
 		width: calc(100% / 3 - 10px);
+		margin-left: 15px;
+		float: left;
+	}
+
+	section#projects label {
+		width: calc(100% / 2 - 15px);
 		margin-left: 15px;
 		float: left;
 	}
