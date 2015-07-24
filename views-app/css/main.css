@@ -84,4 +84,12 @@ input, textarea {
 	nav ul li {
 		display: inline-block;
 	}
+
+	label {
+		width: calc(100% / 3);
+	}
+
+	label:nth-last-child {
+		width: 100%;
+	}
 }
