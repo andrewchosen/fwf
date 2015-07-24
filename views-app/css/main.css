@@ -83,6 +83,12 @@ input, textarea {
 	padding: 15px;
 }
 
+button {
+	border: 3px solid #C13B00;
+	padding: 15px;
+	cursor: pointer;
+}
+
 @media screen and (min-width: 768px) {
 	nav ul li {
 		display: inline-block;
