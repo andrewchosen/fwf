@@ -65,10 +65,29 @@ angular.module("MyPortfolio", ["ngRoute"])
 		}
 	})
 
-	.controller("TestimonialsController", function($scope,$routeParams){
-		$scope.test = "Hello World 3";
+	.controller("TestimonialsController", function($scope,$routeParams,DataService){
+		$scope.testimonials = DataService.getTestimonials();
+		$scope.newTestimonial = {};
 
-		$scope.otherTest = $routeParams.paramTest;
+		$scope.addNewTestimonial = function(){
+			if($scope.newTestimonial.name != undefined){
+				DataService.saveTestimonial($scope.newTestimonial.name,$scope.newTestimonial.testimonial);
+				$scope.newTestimonial = {};
+			}else{
+				alert("Please fill out a testimonial name.");
+			}
+		};
+
+		$scope.removeTestimonial = function(i){
+			DataService.removeTestimonial(i);
+		};
+
+		$scope.clear = function(){
+			DataService.deleteLocalStorage();
+		}
+
+		// Route Param
+		$scope.clientDescription = $routeParams.paramTest;
 	})
 
 	.controller("MainController", function($scope){

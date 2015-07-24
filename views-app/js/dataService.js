@@ -49,4 +49,29 @@ angular.module("MyPortfolio").service("DataService", function(){
 		projectsArray.splice(0);
 		localStorage.clear();
 	}
+
+// Testimonials View
+	var testimonialArray = [];
+	this.getTestimonials = function(){
+		var testimonialArray = JSON.parse(localStorage.getItem("testimonialsLS")) || [];
+		testimonialsArray = testimonialArray;
+			console.log(testimonialArray);
+		return testimonialsArray;
+	}
+	// Save News Testimonial
+	this.saveTestimonial = function(pName, pTestimonial){
+		var savedTestimonials = {name: pName, testimonial: pTestimonial};
+		testimonialsArray.push(savedTestimonials);
+		localStorage.setItem("testimonialsLS", JSON.stringify(testimonialsArray));
+	}
+	// Remove Testimonial
+	this.removeTestimonial = function(pIndex){
+		testimonialsArray.splice(pIndex,1);
+		localStorage.setItem("testimonialsLS", JSON.stringify(testimonialsArray));
+	}
+	// Clear Data
+	this.deleteLocalStorage = function(){
+		testimonialsArray.splice(0);
+		localStorage.clear();
+	}
 });
