@@ -48,8 +48,8 @@ angular.module("MyPortfolio", ["ngRoute"])
 		$scope.newProject = {};
 
 		$scope.addNewProject = function(){
-			if($scope.newProject.title != undefined){
-				DataService.saveProject($scope.newProject.title,$scope.newProject.author,$scope.newProject.date,$scope.newProject.content);
+			if($scope.newProject.name != undefined){
+				DataService.saveProject($scope.newProject.name,$scope.newProject.date,$scope.newProject.description);
 				$scope.newProject = {};
 			}else{
 				alert("Please fill out a project name.");

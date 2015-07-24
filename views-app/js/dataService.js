@@ -34,8 +34,8 @@ angular.module("MyPortfolio").service("DataService", function(){
 		return projectsArray;
 	}
 	// Save News Project
-	this.saveProject = function(pTitle,pAuthor,pDate,pContent){
-		var savedProjects = {title: pTitle, author: pAuthor, date: pDate, content: pContent};
+	this.saveProject = function(pName,pDate,pDescription){
+		var savedProjects = {name: pName, date: pDate, description: pDescription};
 		projectsArray.push(savedProjects);
 		localStorage.setItem("projectsLS", JSON.stringify(projectsArray));
 	}
