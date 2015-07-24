@@ -64,7 +64,6 @@ angular.module("MyPortfolio", ["ngRoute"])
 			DataService.deleteLocalStorage();
 		}
 	})
-	})
 
 	.controller("TestimonialsController", function($scope,$routeParams){
 		$scope.test = "Hello World 3";

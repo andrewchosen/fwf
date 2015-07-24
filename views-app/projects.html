@@ -1,11 +1,10 @@
 <section id="form">
-	<h2>Create Project</h2>
+	<h2>Add Project</h2>
 	<form>
-		<label>Project Title: <input type="text" name="title" ng-model="newProject.title"></label>
-		<label>Author: <input type="text" name="author" ng-model="newProject.author"></label>
-		<label>Publish Date: <input type="text" name="date" ng-model="newProject.date"></label>
-		<label>Content: <textarea type="text" name="content" ng-model="newProject.content"></textarea></label>
-		<button ng-click="addNewProject()">Publish</button>
+		<label>Project Name: <input type="text" name="name" ng-model="newProject.name"></label>
+		<label>Finish Date: <input type="date" name="date" ng-model="newProject.date"></label>
+		<label>Description: <textarea type="text" name="description" ng-model="newProject.description"></textarea></label>
+		<button ng-click="addNewProject()">Add</button>
 	</form>
 </section>
 <section id="entries">
