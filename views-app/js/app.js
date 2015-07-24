@@ -43,7 +43,7 @@ angular.module("MyPortfolio", ["ngRoute"])
 	})
 
 	// Projects Controller
-	.controller("ProjectsController", function($scope){
+	.controller("ProjectsController", function($scope,DataService){
 		$scope.projects = DataService.getProjects();
 		$scope.newProject = {};
 
