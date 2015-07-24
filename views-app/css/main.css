@@ -110,17 +110,18 @@ article button {
 	position: absolute;
 	top: 15px;
 	right: 15px;
-	padding: 5px 10px;
+	padding: 8px 8px;
 	background: transparent;
-	color: red;
+	color: #cc0000;
 	font-size: 2rem;
 	border: 0;
 	cursor: pointer;
 }
 
 article button:hover {
-	background: red;
+	background: #cc0000;
 	border-radius: 50%;
+	color: #fff;
 }
 
 article button:focus {
