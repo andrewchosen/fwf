@@ -19,8 +19,26 @@ angular.module("MyPortfolio", ["ngRoute"])
 		});
 	})
 
-	.controller("NewsController", function($scope){
-		$scope.test = "Hello World 1";
+	.controller("NewsController", function($scope,DataService){
+		$scope.posts = DataService.getPosts();
+		$scope.newPost = {};
+
+		$scope.addNewPost = function(){
+			if($scope.newPost.name != undefined){
+				DataService.savePost($scope.newPost.title,$scope.newPost.author,$scope.newPost.date,$scope.newPost.content);
+				$scope.newPost = {};
+			}else{
+				alert("Please fill out an post name.");
+			}
+		};
+
+		$scope.removePost = function(i){
+			DataService.removePost(i);
+		};
+
+		$scope.clear = function(){
+			DataService.deleteLocalStorage();
+		}
 	})
 
 	.controller("ProjectsController", function($scope){

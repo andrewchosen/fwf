@@ -1,25 +1,25 @@
 angular.module("MyPortfolio").service("DataService", function(){
-	var employeeArray = [];
-	this.getEmployees = function(){
-		var employeeArray = JSON.parse(localStorage.getItem("employeesLS")) || [];
-		employeesArray = employeeArray;
-			console.log(employeeArray);
-		return employeesArray;
+	var postArray = [];
+	this.getPosts = function(){
+		var postArray = JSON.parse(localStorage.getItem("postsLS")) || [];
+		postsArray = postArray;
+			console.log(postArray);
+		return postsArray;
 	}
-	// Save Employee
-	this.saveEmployee = function(pName,pStreet,pCity,pState,pZip){
-		var savedEmployees = {name: pName, street: pStreet, city: pCity, state: pState, zip: pZip};
-		employeesArray.push(savedEmployees);
-		localStorage.setItem("employeesLS", JSON.stringify(employeesArray));
+	// Save News Post
+	this.savePost = function(pName,pStreet,pCity,pState,pZip){
+		var savedPosts = {name: pName, street: pStreet, city: pCity, state: pState, zip: pZip};
+		postsArray.push(savedPosts);
+		localStorage.setItem("postsLS", JSON.stringify(postsArray));
 	}
-	// Remove Employee
-	this.removeEmployee = function(pIndex){
-		employeesArray.splice(pIndex,1);
-		localStorage.setItem("employeesLS", JSON.stringify(employeesArray));
+	// Remove Post
+	this.removePost = function(pIndex){
+		postsArray.splice(pIndex,1);
+		localStorage.setItem("postsLS", JSON.stringify(postsArray));
 	}
 	// Clear Data
 	this.deleteLocalStorage = function(){
-		employeesArray.splice(0);
+		postsArray.splice(0);
 		localStorage.clear();
 	}
 });
