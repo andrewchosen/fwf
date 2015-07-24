@@ -48,13 +48,7 @@ section {
 	overflow: auto;
 }
 
-section button::after {
-	content: "";
-	display: table-cell;
-	clear: both;
-}
-
-section#form {
+section.form {
 	margin-top: 30px;
 	border: 3px solid #424E4F;
 }
