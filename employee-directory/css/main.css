@@ -1,0 +1,131 @@
+body {
+	font: 16px/1.4 arial,helvetica,sans-serif;
+	background: #1695A3;
+	color: #ACF0F2;
+	padding: 30px;
+}
+
+header{
+	margin-bottom: 60px;
+}
+
+h1 {
+	font-size: 3rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #F3FFE2;
+}
+
+section#form {
+	padding: 30px;
+	background: #225378;
+}
+
+section#form h2 {
+	font-size: 1.8rem;
+}
+
+section#form button {
+	padding: 12px;
+	font-size: 1.2rem;
+	border: 3px solid #F3FFE2;
+	font-weight: 700;
+	color: #F3FFE2;
+	background: transparent;
+	text-transform: uppercase;
+	cursor: pointer;
+	width: 100%;
+	margin-top: 12px;
+}
+
+section#form button:hover {
+	background: #F3FFE2;
+	color: #1695A3;
+}
+
+label {
+	display: block;
+	margin: 10px 0;
+}
+
+input {
+	padding: 12px;
+	background-color: #ACF0F2;
+	display: block;
+	margin-top: 12px;
+	width: 100%;
+}
+
+input:focus {
+	background: #FFF;
+	outline: 0;
+}
+
+article {
+	border: 3px solid #F3FFE2;
+	padding: 20px;
+	margin-top: 20px;
+	position: relative;
+}
+
+article h2 {
+	font-size: 1.5rem;
+	color: #F3FFE2;
+}
+
+article p {
+	display: inline-block;
+}
+
+article p:first-of-type {
+	margin-top: 10px;
+	display: block;
+}
+
+article p.city::after {
+	content: ",";
+}
+
+article button {
+	border: 0;
+	background: #F3FFE2;
+	position: absolute;
+	top: 3px;
+	right: 3px;
+	color: #1695A3;
+	font-size: 1.5rem;
+	cursor: pointer;
+	padding: 4px 12px;
+	font-weight: 900;
+}
+
+article button:hover {
+	background: #225378;
+}
+
+@media screen and (min-width: 960px) {
+
+	section#form {
+		width: calc(100% / 3 - 30px);
+		padding: 30px;
+		float: left;
+		margin-right: 30px;
+	}
+
+	form {
+		padding: 20px;
+	}
+
+	section#entries {
+		width: calc(100% / 3 * 2);
+		float: left;
+	}
+
+	article {
+		width: calc(100% / 3 - 20px);
+		padding: 30px;
+		float: left;
+		margin: 0 0 20px 20px;
+	}
+
+}
