@@ -132,13 +132,13 @@ article .post-content, article .description, article .testimonial {
 	font-size: 1.1rem;
 }
 
-article .testimonial::before {
-	content: "\0022 ";
+article .testimonial {
+	font-style: italic;
 }
 
-article .testimonial::after {
-	content: " \0022";
-	font-style: italic;
+article .testimonial::before, article .testimonial::after {
+	content: "\0022";
+	font-size: 1.3rem;
 }
 
 @media screen and (min-width: 768px) {
