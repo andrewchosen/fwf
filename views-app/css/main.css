@@ -4,3 +4,11 @@ body {
 	font: 14px/1.4 'Roboto', sans-serif;
 }
 
+h1 {
+	font-size: 3em;
+}
+
+header, section {
+	max-width: 1024px;
+	margin: auto;
+}
