@@ -80,12 +80,6 @@ label {
 
 input, textarea {
 	display: block;
-}
-
-input {
-	margin-left: 7.5px;
-}
-
-textarea {
 	margin-top: 7.5px;
+	width: 100%;
 }
