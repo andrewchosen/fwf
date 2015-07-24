@@ -132,6 +132,14 @@ article .post-content, article .description, article .testimonial {
 	font-size: 1.1rem;
 }
 
+article .testimonial::before {
+	content: "\0022 ";
+}
+
+article .testimonial::after {
+	content: " \0022";
+}
+
 @media screen and (min-width: 768px) {
 	nav ul li {
 		display: inline-block;
