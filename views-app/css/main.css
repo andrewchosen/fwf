@@ -65,7 +65,7 @@ article {
 	border-bottom: 1px solid #424E4F;
 }
 
-article:nth-of-type(0) {
+article:first-of-type {
 	margin-top: 0;
 }
 
