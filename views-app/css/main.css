@@ -94,7 +94,7 @@ input, textarea {
 	}
 
 	section#projects form label {
-		width: calc(100% / 2 - 15px);
+		width: calc(100% / 2 - 7.5px);
 		margin-left: 15px;
 		float: left;
 	}
