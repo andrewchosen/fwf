@@ -138,6 +138,7 @@ article .testimonial::before {
 
 article .testimonial::after {
 	content: " \0022";
+	font-style: italic;
 }
 
 @media screen and (min-width: 768px) {
