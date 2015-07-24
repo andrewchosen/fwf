@@ -87,9 +87,10 @@ input, textarea {
 
 	label {
 		width: calc(100% / 3);
+		float: left;
 	}
 
-	label:nth-last-child {
+	label.textbox {
 		width: 100%;
 	}
 }
