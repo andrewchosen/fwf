@@ -21,12 +21,12 @@ nav {
 	text-align: center;
 }
 
-nav ul li {
+nav ul li a {
 	display: inline-block;
 	font-size: 1.4rem;
 	color: #C13B00;
 }
 
-nav ul li:hover {
+nav ul li a:hover {
 	color: #FF6600;
 }
