@@ -100,10 +100,10 @@ input, textarea {
 	}
 
 	section form label:first-of-type, section form label.textbox {
-		margin-left: 0;
+		margin-left: 0 !important;
 	}
 
 	section.form label.textbox {
-		width: 100%;
+		width: 100% !important;
 	}
 }
