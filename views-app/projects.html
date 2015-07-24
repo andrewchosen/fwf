@@ -9,8 +9,7 @@
 </section>
 <section id="entries">
 	<article ng-repeat="project in projects track by $index">
-		<h2>{{project.title}}</h2>
-		<p>{{project.author}}</p>
+		<h2>{{project.name}}</h2>
 		<p>{{project.date}}</p>
 		<p>{{project.content}}</p>
 		<button ng-click="removeProject($index)">&times;</button>
