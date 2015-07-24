@@ -32,10 +32,6 @@ header, nav {
 	text-align: center;
 }
 
-nav ul li {
-	display: inline-block;
-}
-
 nav ul li a {
 	display: block;
 	font-size: 1.4rem;
@@ -82,4 +78,10 @@ input, textarea {
 	display: block;
 	margin-top: 7.5px;
 	width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+	nav ul li {
+		display: inline-block;
+	}
 }
