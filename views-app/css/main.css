@@ -90,6 +90,7 @@ button {
 	cursor: pointer;
 	font-weight: 700;
 	background: transparent;
+	text-transform: uppercase;
 }
 
 button:hover {
