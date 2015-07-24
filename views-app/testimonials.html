@@ -1,4 +1,4 @@
-<section id="form">
+<section id="testimonials" class="form">
 	<h2>Add a {{ clientDescription }} Client </h2>
 	<form>
 		<label>Client Name: <input type="text" name="name" ng-model="newTestimonial.name"></label>
@@ -6,7 +6,7 @@
 		<button ng-click="addNewTestimonial()">Add</button>
 	</form>
 </section>
-<section id="testimonials">
+<section class="content">
 	<article ng-repeat="testimonial in testimonials track by $index">
 		<h3>{{testimonial.name}}</h3>
 		<p>{{testimonial.quote}}</p>
