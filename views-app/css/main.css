@@ -59,3 +59,13 @@ section#news, section#projects, section#testimonials {
 	margin-top: 30px;
 	background: #292C2E;
 }
+
+article {
+	margin-top: 30px;
+	border-bottom: 1px solid #424E4F;
+}
+
+article:nth-of-type(0) {
+	margin-top: 0;
+}
+
