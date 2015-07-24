@@ -9,7 +9,7 @@
 <section class="content">
 	<article ng-repeat="testimonial in testimonials track by $index">
 		<h3>{{testimonial.name}}</h3>
-		<p>{{testimonial.quote}}</p>
+		<p class="testimonial">{{testimonial.quote}}</p>
 		<button ng-click="removeTestimonial($index)">&times;</button>
 	</article>
 </section>

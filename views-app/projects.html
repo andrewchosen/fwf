@@ -10,8 +10,8 @@
 <section class="content">
 	<article ng-repeat="project in projects track by $index">
 		<h3>{{project.name}}</h3>
-		<p>{{project.date | date : "MM/dd/yyyy"}}</p>
-		<p>{{project.description}}</p>
+		<p>Created on {{project.date | date : "MM/dd/yyyy"}}</p>
+		<p class="description">{{project.description}}</p>
 		<button ng-click="removeProject($index)">&times;</button>
 	</article>
 </section>
