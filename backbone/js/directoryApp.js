@@ -22,11 +22,9 @@ var andrewLancaster = new app.singlePerson({
 });
 
 var personGroup = new app.PersonsCollection([
-	johnDoe, janeDoe
+	johnDoe, janeDoe, andrewLancaster
 ]);
 
-personGroup.add(andrewLancaster);
+var personGroupView = new app.allPersonsView({ collection: personGroup });
 
-personGroup.remove(janeDoe);
-
-console.log(personGroup.toJSON());
+$("#allPersons").html(personGroupView.render().el);
