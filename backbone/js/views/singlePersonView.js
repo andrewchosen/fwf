@@ -12,5 +12,18 @@ app.singlePersonView = Backbone.View.extend({
 		var personTemplate = this.template(this.model.toJSON());
 		this.$el.html(personTemplate);
 		return this;
+	},
+
+	events: {
+		'mouseover': 'addBgColor',
+		'mouseout': 'removeBgColor'
+	},
+
+	addBgColor: function() {
+		this.$el.addClass("bgColorImage");
+	},
+
+	removeBgColor: function() {
+		this.$el.removeClass("bgColorImage");
 	}
 });

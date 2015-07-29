@@ -7,10 +7,10 @@ app.allPersonsView = Backbone.View.extend({
 	render: function(){
 		this.collection.each(this.addPerson, this);
 		return this;
-	}
+	},
 
 	addPerson: function(person) {
-		var personView = new app.singlePerson.View ({ model: person });
-		this.$el.append(flowerView.render().el);
+		var personView = new app.singlePersonView ({ model: person });
+		this.$el.append(personView.render().el);
 	}
 });
