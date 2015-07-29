@@ -9,7 +9,6 @@ var johnDoe = new app.singlePerson({
 
 var janeDoe = new app.singlePerson({
 	name: "Jane Doe",
-	age: "19",
 	gender: "female",
 	image: "images/janedoe.jpg",
 	website: "http://yahoo.com"
@@ -19,11 +18,15 @@ var andrewLancaster = new app.singlePerson({
 	name: "Andrew Lancaster",
 	age: "29",
 	gender: "male",
-	image: "images/andrewlancaster.jpg",
 	website: "http://facebook.com"
 });
 
-console.log(johnDoe.toJOSN());
-console.log(janeDoe.toJOSN());
-console.log(andrewLancaster.toJOSN());
+var personGroup = new app.PersonsCollection([
+	johnDoe, janeDoe
+]);
 
+personGroup.add(andrewLancaster);
+
+personGroup.remove(janeDoe);
+
+console.log(personGroup.toJSON());
